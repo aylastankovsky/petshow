@@ -1,24 +1,49 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pet Show</title>
-    <link rel="stylesheet" type="text/css" href="../petshow/form.css">
+    <link rel="stylesheet" type="text/css" href="../petshow/style.css">
+    <script src="../petshow/app.js" defer></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
 
 </head>
 
-<header>
-    <img src="../petshow/Pet Show (1).png" alt="petshowlogo" style="width: 200px;">
+<header class="cabecalho">
+    <img class="headerimg" src="../petshow/Pet Show (1).png">
+
+    <nav class="menu-cabecalho">
+      <a class="cabecalho-item" href="">Home</a>
+        <a class="cabecalho-item" href="">Sobre Nós</a>
+        <a class="cabecalho-item" href="">Nossos Clientes</a>
+    </nav>
 </header>
+
+
 
 
 <body>
 
+
+<div class="container">
+
+
+<div class="carrosel">
+<div class="container2" id="img">
+
+    <img src="../petshow/golden.jpg" alt="">
+    <img src="../petshow/cat.jpg" alt="">
+    <img src="../petshow/porquinhodaindia.jpg" alt="">
+
+</div>
+</div>
 
 <form action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST">
 
@@ -48,11 +73,27 @@
     <option value="0123t0000012cwH">Pessoa Juridica</option>
     </select><br>
 
-  <input type="submit" name="submit">
+  <input class="botao" type="submit" name="submit">
   
   </form>
   
 </form>
-    
+
+
+
+</div>
+
+<footer class="rodape">
+
+  <nav class="rodape-menu">
+    <a class="rodape-item" href="">Sobre Nós</a>
+    <a class="rodape-item" href="">Home</a>
+    <a class="rodape-item" href="">Nossos Clientes</a>
+</nav>
+
+  
+</footer>
+
+
 </body>
 </html>
