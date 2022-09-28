@@ -37,6 +37,10 @@ form{
         
 }
 
+a:hover{
+    color: black;
+}
+
 .cabecalho{
     display: flex;
     flex-direction: row;
@@ -67,11 +71,10 @@ form{
 }
 
 .rodape.menu{
-display: flex;
-flex-direction: row;
-align-items: flex-start;
-justify-content: center;    
-padding: auto;
+    font-family: Indie Flower, 'sans serif';
+    display: flex;
+    gap: 32px;
+    justify-content: flex-end;
 }
 
 .rodape-item{
@@ -104,8 +107,8 @@ padding: auto;
     width: 150px;
     object-fit: cover;
     border-radius: 100%;
-    display: flex;
-    justify-content: center;
+    display: block;
+    margin: 0 auto;
    
   }
 
@@ -137,7 +140,15 @@ form{
     display: flex;
     flex-direction: column;
     align-items: center;
+    color: #FDF7ED;
+    
 }
+
+input{
+    border-radius: 5px;
+}
+
+
 
 form > div > label{
     width: 80px;
