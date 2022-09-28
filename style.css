@@ -104,8 +104,8 @@ padding: auto;
     width: 150px;
     object-fit: cover;
     border-radius: 100%;
-    display: flex;
-    justify-content: center;
+    display: block;
+    margin: 0 auto;
    
   }
 
