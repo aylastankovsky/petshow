@@ -18,6 +18,7 @@
       href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap"
       rel="stylesheet"
     />
+    <META HTTP-EQUIV="Content-type" CONTENT="text/html; charset=UTF-8">
 
   </head>
 
@@ -46,12 +47,38 @@
        <img class="cachorrin" src="https://www.petlove.com.br/dicas/wp-content/uploads/2017/06/filhotes-fofos-5.gif" alt="cachorrin fofo">
     </div>
 
-    <div class="container3">
-        <a href="https://instagram.com/petshow" target="_blank"><img src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white" target="_blank"></a>
+    <form action="https://webto.salesforce.com/servlet/servlet.WebToCase?encoding=UTF-8" method="POST">
 
-    </div>
+        <input type=hidden name="orgid" value="00D3t000005ef4S">
+        <input type=hidden name="retURL" value="https://petshow-dev-ed.lightning.force.com/lightning/o/Case/">
 
-   
+        <label for="name">Nome do contato</label><input  id="name" maxlength="80" name="name" size="20" type="text" /><br>
+
+<label for="email">Email</label><input  id="email" maxlength="80" name="email" size="20" type="text" /><br>
+
+<label for="phone">Telefone</label><input  id="phone" maxlength="40" name="phone" size="20" type="text" /><br>
+
+<label for="subject">Assunto</label><input  id="subject" maxlength="80" name="subject" size="20" type="text" /><br>
+
+<label for="description">Descrição</label><textarea name="description"></textarea><br>
+
+<label for="priority">Prioridade</label><select  id="priority" name="priority"><option value="">-- Nenhum --</option><option value="High">High</option>
+<option value="Medium">Medium</option>
+<option value="Low">Low</option>
+</select><br>
+
+<label for="reason">Motivo do caso</label><select  id="reason" name="reason"><option value="">-- Nenhum --</option><option value="Installation">Installation</option>
+<option value="Equipment Complexity">Equipment Complexity</option>
+<option value="Performance">Performance</option>
+<option value="Breakdown">Breakdown</option>
+<option value="Equipment Design">Equipment Design</option>
+<option value="Feedback">Feedback</option>
+<option value="Other">Other</option>
+</select><br>
+
+<input type="submit" name="submit">
+
+</form>
 
 
 </main>
