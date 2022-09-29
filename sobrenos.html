@@ -1,12 +1,84 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sobre Nós</title>
-</head>
-<body>
+    <link rel="stylesheet" type="text/css" href="../petshow/sobrenos.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap"
+      rel="stylesheet"
+    />
+    <META HTTP-EQUIV="Content-type" CONTENT="text/html; charset=UTF-8">
+
+  </head>
+
+  <body>
+    <header class="cabecalho">
+      <img class="headerimg" src="../petshow/Pet Show (1).png" />
+
+      <nav class="menu-cabecalho">
+        <a class="cabecalho-item" href="../petshow/index.html">Home</a>
+        <a class="cabecalho-item" href="../petshow/sobrenos.html">Sobre Nós</a>
+        <a class="cabecalho-item" href="../petshow/clientes.html">Nossos Clientes</a>
+      </nav>
+    </header>
+
     
-</body>
+<main>
+
+    <form action="https://webto.salesforce.com/servlet/servlet.WebToCase?encoding=UTF-8" method="POST">
+
+        <input type=hidden name="orgid" value="00D3t000005ef4S">
+        <input type=hidden name="retURL" value="https://petshow-dev-ed.lightning.force.com/lightning/o/Case/">
+
+        <label for="name">Nome do contato</label><input  id="name" maxlength="80" name="name" size="20" type="text" /><br>
+
+<label for="email">Email</label><input  id="email" maxlength="80" name="email" size="20" type="text" /><br>
+
+<label for="phone">Telefone</label><input  id="phone" maxlength="40" name="phone" size="20" type="text" /><br>
+
+<label for="subject">Assunto</label><input  id="subject" maxlength="80" name="subject" size="20" type="text" /><br>
+
+<label for="description">Descrição</label><textarea name="description"></textarea><br>
+
+<label for="priority">Prioridade</label><select  id="priority" name="priority"><option value="">-- Nenhum --</option><option value="High">High</option>
+<option value="Medium">Medium</option>
+<option value="Low">Low</option>
+</select><br>
+
+<label for="reason">Motivo do caso</label><select  id="reason" name="reason"><option value="">-- Nenhum --</option><option value="Installation">Installation</option>
+<option value="Equipment Complexity">Equipment Complexity</option>
+<option value="Performance">Performance</option>
+<option value="Breakdown">Breakdown</option>
+<option value="Equipment Design">Equipment Design</option>
+<option value="Feedback">Feedback</option>
+<option value="Other">Other</option>
+</select><br>
+
+<input type="submit" name="submit">
+
+</form>
+
+
+
+</main>
+      
+    <footer class="rodape">
+      <nav class="rodape-menu">
+        <a class="rodape-item" href="../petshow/sobrenos.html">Sobre Nós</a>
+        <a class="rodape-item" href="../petshow/index.html">Home</a>
+        <a class="rodape-item" href="../petshow/clientes.html">Nossos Clientes</a>
+      </nav>
+    </footer>
+  </body>
 </html>
