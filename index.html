@@ -1,94 +1,134 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Pet Show</title>
-    <link rel="stylesheet" type="text/css" href="../petshow/style.css">
+    <link rel="stylesheet" type="text/css" href="../petshow/style.css" />
     <script src="../petshow/app.js" defer></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-</head>
+  <body>
+    <header class="cabecalho">
+      <img class="headerimg" src="../petshow/Pet Show (1).png" />
 
-<body>
+      <nav class="menu-cabecalho">
+        <a class="cabecalho-item" href="home">Home</a>
+        <a class="cabecalho-item" href="sobrenos">Sobre Nós</a>
+        <a class="cabecalho-item" href="clientes">Nossos Clientes</a>
+      </nav>
+    </header>
 
-  
-<header class="cabecalho">
-  <img class="headerimg" src="../petshow/Pet Show (1).png">
+    <div class="container">
+      <div class="carrosel">
+        <div class="container2" id="img">
+          <img src="../petshow/golden.jpg" alt="" />
+          <img src="../petshow/cat.jpg" alt="" />
+          <img src="../petshow/porquinhodaindia.jpg" alt="" />
+        </div>
+      </div>
 
-  <nav class="menu-cabecalho">
-    <a class="cabecalho-item" href="home">Home</a>
-      <a class="cabecalho-item" href="sobrenos">Sobre Nós</a>
-      <a class="cabecalho-item" href="clientes">Nossos Clientes</a>
-  </nav>
-</header>
+      <form
+        action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8"
+        method="POST"
+      >
+        <input type="hidden" name="oid" value="00D3t000005ef4S" />
+        <input type="hidden" name="retURL" value="http://" />
+        <input type="hidden" name="debug" value="1" />
+        <input type="hidden" name="debugEmail" value="petshowcode@gmail.com" />
 
-<div class="container">
+        <label for="first_name">Primeiro Nome</label
+        ><input
+          id="first_name"
+          maxlength="40"
+          name="first_name"
+          size="20"
+          type="text"
+        /><br />
 
+        <label for="last_name">Sobrenome</label
+        ><input
+          id="last_name"
+          maxlength="80"
+          name="last_name"
+          size="20"
+          type="text"
+        /><br />
 
-<div class="carrosel">
-<div class="container2" id="img">
+        <label for="email">Email</label
+        ><input
+          id="email"
+          maxlength="80"
+          name="email"
+          size="20"
+          type="text"
+        /><br />
 
-    <img src="../petshow/golden.jpg" alt="">
-    <img src="../petshow/cat.jpg" alt="">
-    <img src="../petshow/porquinhodaindia.jpg" alt="">
+        <label for="company">Empresa</label
+        ><input
+          id="company"
+          maxlength="40"
+          name="company"
+          size="20"
+          type="text"
+        /><br />
 
-</div>
-</div>
+        <label for="city">Cidade</label
+        ><input
+          id="city"
+          maxlength="40"
+          name="city"
+          size="20"
+          type="text"
+        /><br />
 
-<form action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST">
+        <label for="state">Estado/província</label
+        ><input
+          id="state"
+          maxlength="20"
+          name="state"
+          size="20"
+          type="text"
+        /><br />
 
-  <input type=hidden name="oid" value="00D3t000005ef4S">
-  <input type=hidden name="retURL" value="http://">
-  <input type="hidden" name="debug" value=1>
-  <input type="hidden" name="debugEmail" value="petshowcode@gmail.com"> 
- 
-  
-  <label for="first_name">Primeiro Nome</label><input  id="first_name" maxlength="40" name="first_name" size="20" type="text" /><br>
-  
-  <label for="last_name">Sobrenome</label><input  id="last_name" maxlength="80" name="last_name" size="20" type="text" /><br>
-  
-  <label for="email">Email</label><input  id="email" maxlength="80" name="email" size="20" type="text" /><br>
-  
-  <label for="company">Empresa</label><input  id="company" maxlength="40" name="company" size="20" type="text" /><br>
-  
-  <label for="city">Cidade</label><input  id="city" maxlength="40" name="city" size="20" type="text" /><br>
-  
-  <label for="state">Estado/província</label><input  id="state" maxlength="20" name="state" size="20" type="text" /><br>
-  
- 
-  
-  CPF:<input  id="00N3t00000JdrPs" maxlength="50" name="00N3t00000JdrPs" size="20" type="text" /><br>
-  
-  <label for="recordType">Tipo de Compra</label><select  id="recordType" name="recordType"><option value="">-- Nenhum --</option><option value="0123t0000012cuW">Pessoa Fisica</option>
-    <option value="0123t0000012cwH">Pessoa Juridica</option>
-    </select><br>
+        CPF:<input
+          id="00N3t00000JdrPs"
+          maxlength="50"
+          name="00N3t00000JdrPs"
+          size="20"
+          type="text"
+        /><br />
 
-  <input class="botao" type="submit" name="submit">
-  
-  </form>
-  
-</form>
+        <label for="recordType">Tipo de Compra</label
+        ><select id="recordType" name="recordType">
+          <option value="">-- Nenhum --</option>
+          <option value="0123t0000012cuW">Pessoa Fisica</option>
+          <option value="0123t0000012cwH">Pessoa Juridica</option></select
+        ><br />
 
+        <input class="botao" type="submit" name="submit" />
+      </form>
+    </div>
 
-
-</div>
-
-<footer class="rodape">
-
-  <nav class="rodape-menu">
-    <a class="rodape-item" href="">Sobre Nós</a>
-    <a class="rodape-item" href="">Home</a>
-    <a class="rodape-item" href="">Nossos Clientes</a>
-</nav>
-
-  
-</footer>
-</body>
+    <footer class="rodape">
+      <nav class="rodape-menu">
+        <a class="rodape-item" href="">Sobre Nós</a>
+        <a class="rodape-item" href="">Home</a>
+        <a class="rodape-item" href="">Nossos Clientes</a>
+      </nav>
+    </footer>
+  </body>
 </html>
