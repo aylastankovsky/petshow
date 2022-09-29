@@ -66,20 +66,21 @@ a:hover{
     background-color: #FDF7ED;
     display: flex;
     flex-direction: row;
+    align-items: center;
 
 }
 
 .rodape-menu{
+    font-family: Indie Flower, 'sans serif';
     display: flex;
-    gap: 38px;
     justify-content: flex-end;
-
 }
 
 .rodape-item{
     font-family: Indie Flower, 'sans serif';
-    color: #A36A4F;
     font-size: x-large;
+    color:#A36A4F;
+    gap: 40px
 }
 
 .container{
