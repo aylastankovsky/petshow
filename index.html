@@ -1,145 +1,82 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Pet Show</title>
-    <link rel="stylesheet" type="text/css" href="../petshow/style.css" />
-    <script src="../petshow/app.js" defer></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap"
-      rel="stylesheet"
-    />
-  </head>
 
-  <body>
-    <header class="cabecalho">
-      <img class="headerimg" src="../petshow/Pet Show (1).png" />
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pet Show</title>
+  <link rel="stylesheet" type="text/css" href="../petshow/style.css" />
+  <script src="../petshow/app.js" defer></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet" />
+</head>
 
-      <nav class="menu-cabecalho">
-        <a class="cabecalho-item" href="../petshow/index.html">Home</a>
-        <a class="cabecalho-item" href="../petshow/sobrenos.html">Sobre Nós</a>
-        <a class="cabecalho-item" href="../petshow/clientes.html">Nossos Clientes</a>
-      </nav>
-    </header>
+<body>
+  <header class="cabecalho">
+    <img class="headerimg" src="../petshow/Pet Show (1).png" />
 
-    <div class="container">
-      <div class="carrosel">
-        <div class="container2" id="img">
-          <img src="../petshow/golden.jpg" alt="" />
-          <img src="../petshow/cat.jpg" alt="" />
-          <img src="../petshow/porquinhodaindia.jpg" alt="" />
-        </div>
+    <nav class="menu-cabecalho">
+      <a class="cabecalho-item" href="../petshow/index.html">Home</a>
+      <a class="cabecalho-item" href="../petshow/sobrenos.html">Sobre Nós</a>
+      <a class="cabecalho-item" href="../petshow/clientes.html">Nossos Clientes</a>
+    </nav>
+  </header>
+
+  <div class="container">
+    <div class="carrosel">
+      <div class="container2" id="img">
+        <img src="../petshow/golden.jpg" alt="" />
+        <img src="../petshow/cat.jpg" alt="" />
+        <img src="../petshow/porquinhodaindia.jpg" alt="" />
       </div>
+    </div>
 
-      <form id="formulario"
-        action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8"
-        method="POST"
-      >
-        <input type="hidden" name="oid" value="00D3t000005ef4S"/>
-        <input type="hidden" name="retURL" value="https://petshow-dev-ed.lightning.force.com/lightning/o/Lead/list?filterName=00B3t00000FPGayEAH"/>
-        <input type="hidden" name="debug" value="1"/>
+    <div class="box">
+      <form id="formulario" action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST">
+        <input type="hidden" name="oid" value="00D3t000005ef4S" />
+        <input type="hidden" name="retURL" value="https://petshow-dev-ed.lightning.force.com/lightning/o/Lead/list?filterName=00B3t00000FPGayEAH" />
+        <input type="hidden" name="debug" value="1" />
         <input type="hidden" name="debugEmail" value="petshowcode@gmail.com" />
 
+        <label for="first_name">Primeiro Nome</label><input class="campo" id="first_name" maxlength="40" name="first_name" size="20" type="text" required /><br />
 
+        <label for="last_name">Sobrenome</label><input class="campo" id="last_name" maxlength="80" name="last_name" size="20" type="text" required /><br />
 
-        <label for="first_name">Primeiro Nome</label
-        ><input class="campo"
-          id="first_name"
-          maxlength="40"
-          name="first_name"
-          size="20"
-          type="text" 
-          required
-        /><br />
+        <label for="email">Email</label><input class="campo" id="email" maxlength="80" name="email" size="20" type="text" required /><br />
 
-        <label for="last_name">Sobrenome</label
-        ><input class="campo"
-          id="last_name"
-          maxlength="80"
-          name="last_name"
-          size="20"
-          type="text"
-          required
-        /><br />
+        <label for="company">Empresa</label><input class="campo" id="company" maxlength="40" name="company" size="20" type="text" required /><br />
 
-        <label for="email">Email</label
-        ><input class="campo"
-          id="email"
-          maxlength="80"
-          name="email"
-          size="20"
-          type="text"
-          required
-        /><br />
+        <label for="city">Cidade</label><input class="campo" id="city" maxlength="40" name="city" size="20" type="text" required /><br />
 
-        <label for="company">Empresa</label
-        ><input class="campo"
-          id="company"
-          maxlength="40"
-          name="company"
-          size="20"
-          type="text"
-          required
-        /><br />
+        <label for="state">Estado/província</label><input class="campo" id="state" maxlength="20" name="state" size="20" type="text" required /><br />
 
-        <label for="city">Cidade</label
-        ><input class="campo"
-          id="city"
-          maxlength="40"
-          name="city"
-          size="20"
-          type="text"
-          required
-        /><br />
+        CPF:<input class="campo" id="00N3t00000JdrPs" maxlength="50" name="00N3t00000JdrPs" size="20" type="text" requerid /><br />
 
-        <label for="state">Estado/província</label
-        ><input class="campo"
-          id="state"
-          maxlength="20"
-          name="state"
-          size="20"
-          type="text"
-          required
-        /><br />
-
-        CPF:<input class="campo"
-          id="00N3t00000JdrPs"
-          maxlength="50"
-          name="00N3t00000JdrPs"
-          size="20"
-          type="text"
-          requerid
-        /><br />
-
-        <label for="recordType">Tipo de Compra</label
-        ><select id="recordType" name="recordType">
+        <label for="recordType">Tipo de Compra</label><select id="recordType" name="recordType">
           <option value="">-- Nenhum --</option>
           <option value="0123t0000012cuW">Pessoa Fisica</option>
-          <option value="0123t0000012cwH">Pessoa Juridica</option></select
-        ><br />
+          <option value="0123t0000012cwH">Pessoa Juridica</option>
+        </select><br />
 
         <input class="botao" type="submit" name="submit" />
       </form>
     </div>
-
-    <footer class="rodape">
-      <div class="rounded-social-buttons">
-        <a class="social-button facebook" href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-f"></i></a>
-        <a class="social-button twitter" href="https://www.twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a>
-        <a class="social-button linkedin" href="https://www.linkedin.com/" target="_blank"><i class="fab fa-linkedin"></i></a>
-        <a class="social-button youtube" href="https://www.youtube.com/" target="_blank"><i class="fab fa-youtube"></i></a>
-        <a class="social-button instagram" href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+  </div>
+  <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/all.js" integrity="sha384-xymdQtn1n3lH2wcu0qhcdaOpQwyoarkgLVxC/wZ5q7h9gHtxICrpcaSUfygqZGOe" crossorigin="anonymous"></script>
+  <footer>
+    <div class="rounded-social-buttons">
+      <a class="social-button facebook" href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+      <a class="social-button twitter" href="https://www.twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a>
+      <a class="social-button linkedin" href="https://www.linkedin.com/" target="_blank"><i class="fab fa-linkedin"></i></a>
+      <a class="social-button youtube" href="https://www.youtube.com/" target="_blank"><i class="fab fa-youtube"></i></a>
+      <a class="social-button instagram" href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
     </div>
-    </footer>
-  </body>
+  </footer>
+</body>
+
 </html>
