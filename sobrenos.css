@@ -63,26 +63,6 @@ a:hover {
   font-size: x-large;
 }
 
-.rodape {
-  padding: 32px;
-  border-top: 0.4px solid black;
-  background-color: #fdf7ed;
-  display: flex;
-  flex-direction: row;
-}
-
-.rodape-menu {
-  display: flex;
-  gap: 38px;
-  justify-content: flex-end;
-}
-
-.rodape-item {
-  font-family: Indie Flower, "sans serif";
-  color: #a36a4f;
-  font-size: x-large;
-}
-
 .container {
   border-top: #a36a4f 50px solid;
   border-left: #a36a4f 80px solid;
@@ -121,11 +101,12 @@ a:hover {
 }
 
 .container2 {
-  width: 500px;
+  width: 518px;
   height: 500px;
-  background-color: #fdf7ed;
-  position: static;
-  padding: 5px;
+  background-color: #a36a4f;
+  color: #fdf7ed;
+  position: relative;
+  padding: 0 5px;
   align-self: flex-start;
 }
 
