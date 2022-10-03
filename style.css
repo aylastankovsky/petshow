@@ -7,18 +7,20 @@
 }
 
 body {
-  background-color: #a36a4f;
-  font-family: "Open Sans", "sans serif";
-  font-size: 100%;
-  margin: 0;
-}
+	    display: flex;
+	    min-height: 100vh;
+	    flex-direction: column;
+	    margin: 0;
+	    font-family: 'Open Sans', 'sans serif';
+   		font-size: 100%;
+	  }
+
 
 header {
   display: flex;
   flex-direction: row;
   background-color: #fdf7ed;
   justify-content: center;
-  padding: 1em;
 }
 
 a:hover {
@@ -43,6 +45,10 @@ a:hover {
   color: #a36a4f;
   font-size: x-large;
 }
+
+header, footer {
+	    padding: 1em;
+	  }
 
 .rodape {
   padding: 32px;
