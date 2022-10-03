@@ -95,13 +95,12 @@ a:hover {
   color: black;
 }
 
-.headerimg {
-  height: 150px;
-  width: 150px;
-  object-fit: cover;
-  border-radius: 100%;
-  display: block;
-  margin: 0 auto;
+.logo {
+  width: 90px;
+  height: 90px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
 }
 
 .container2 {
