@@ -48,6 +48,15 @@ header, footer {
 	    padding: 1em;
 	  }
 
+.headerimg {
+  height: 150px;
+  width: 150px;
+  object-fit: cover;
+  border-radius: 100%;
+  display: block;
+  margin: 0 auto;
+}
+
 .rodape {
   padding: 32px;
   border-top: 0.4px solid black;
